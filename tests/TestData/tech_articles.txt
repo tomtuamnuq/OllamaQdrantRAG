@@ -1,0 +1,106 @@
+Docker containers provide a lightweight way to package and run applications in isolated environments.
+Kubernetes is an open-source platform designed to automate deploying, scaling, and managing containerized applications.
+Microservices architecture allows teams to develop, deploy, and scale parts of applications independently.
+REST APIs use HTTP methods like GET, POST, PUT, and DELETE to perform operations on resources.
+GraphQL provides a more flexible approach to API development by allowing clients to request specific data.
+Authentication ensures that users are who they claim to be, while authorization determines what they can access.
+JSON Web Tokens (JWT) offer a secure way to transmit information between parties as a JSON object.
+CORS (Cross-Origin Resource Sharing) enables secure cross-origin requests in web applications.
+Database indexing improves query performance by creating data structures that speed up data retrieval operations.
+SQL transactions ensure data integrity by grouping database operations into atomic units.
+NoSQL databases provide flexible schema design and horizontal scaling capabilities.
+Redis is an in-memory data structure store used as a database, cache, message broker, and queue.
+MongoDB stores data in flexible, JSON-like documents that can vary in structure.
+Elasticsearch excels at full-text search and analyzing large volumes of data.
+Load balancers distribute incoming network traffic across multiple servers to ensure high availability.
+CI/CD pipelines automate the process of building, testing, and deploying applications.
+Git branches allow developers to work on features or fixes without affecting the main codebase.
+Pull requests facilitate code review and collaboration in software development.
+Unit tests verify that individual components of software work as expected in isolation.
+Integration tests check that different parts of an application work correctly together.
+Testing pyramids suggest having more unit tests than integration or end-to-end tests.
+Dependency injection helps create loosely coupled and more maintainable applications.
+Design patterns provide reusable solutions to commonly occurring problems in software design.
+The Single Responsibility Principle states that a class should have only one reason to change.
+Object-oriented programming organizes code into objects that contain both data and behavior.
+Functional programming emphasizes immutable data and pure functions without side effects.
+Asynchronous programming enables non-blocking execution of operations in applications.
+Memory leaks occur when programs fail to release memory that is no longer needed.
+Garbage collection automatically frees memory that is no longer referenced by a program.
+Caching improves application performance by storing frequently accessed data in memory.
+Service discovery allows services to locate and communicate with each other dynamically.
+Message queues enable asynchronous communication between different parts of a system.
+Domain-Driven Design aligns software design with business domain concepts and rules.
+Event sourcing stores the state of a system as a sequence of events over time.
+CQRS separates read and write operations to optimize for different requirements.
+Version control systems track changes to code and enable collaboration among developers.
+Code reviews help maintain code quality and share knowledge within development teams.
+Continuous monitoring helps detect and resolve issues in production environments.
+Infrastructure as Code manages and provisions infrastructure through code instead of manual processes.
+Serverless computing allows developers to build applications without managing servers directly.
+Containerization ensures consistent application behavior across different environments.
+Microservices communicate through well-defined APIs and operate independently.
+DevOps practices combine software development and IT operations for faster delivery.
+Agile methodologies emphasize iterative development and responding to change.
+Technical debt represents the implied cost of additional work caused by choosing quick solutions.
+Code refactoring improves code structure without changing its external behavior.
+Design systems provide consistent UI components and patterns across applications.
+API gateways provide a single entry point for managing and securing multiple backend services.
+Rate limiting prevents API abuse by controlling the number of requests from clients.
+Database sharding distributes data across multiple machines to handle large datasets.
+Observability helps understand system behavior through logs, metrics, and traces.
+Blue-green deployments minimize downtime by maintaining two identical production environments.
+Security scanning tools help identify vulnerabilities in application code and dependencies.
+OAuth 2.0 provides secure authorization flows for web and desktop applications.
+Configuration management ensures consistent application settings across environments.
+Service meshes manage communication between microservices in complex applications.
+Database migrations handle changes to database schema in a version-controlled way.
+Semantic versioning communicates the nature of changes in software releases.
+Error handling strategies prevent applications from crashing when problems occur.
+Logging best practices help diagnose issues and understand system behavior.
+Performance optimization improves application speed and resource utilization.
+Scalability ensures applications can handle increasing loads effectively.
+Security headers protect web applications from various types of attacks.
+Data encryption protects sensitive information from unauthorized access.
+Backup strategies prevent data loss and enable disaster recovery.
+System architecture decisions impact maintainability and scalability.
+Code documentation helps other developers understand and maintain the codebase.
+Application monitoring provides insights into system health and performance.
+Database connection pooling improves application performance and resource usage.
+Caching strategies reduce database load and improve response times.
+Authentication providers simplify user management in applications.
+API documentation helps developers integrate with your services effectively.
+WebSocket connections enable real-time communication in web applications.
+Database normalization reduces data redundancy and maintains consistency.
+Continuous deployment automates the release process to production environments.
+Service level agreements define expected availability and performance metrics.
+Error tracking helps identify and fix issues in production applications.
+Database replication provides redundancy and improves read performance.
+Load testing verifies application performance under expected conditions.
+Security testing identifies vulnerabilities before they reach production.
+Code coverage measures how much code is executed during testing.
+Feature flags enable controlled rollout of new functionality.
+API versioning helps manage changes without breaking existing clients.
+Database backups protect against data loss and enable recovery.
+Monitoring alerts notify teams when issues occur in production.
+Deployment strategies minimize risk when releasing new versions.
+Authentication tokens secure API requests from clients.
+Caching layers improve application response times.
+Database indexing strategies optimize query performance.
+API rate limiting prevents service abuse.
+Security scanning identifies potential vulnerabilities.
+Logging systems centralize application events.
+Performance metrics guide optimization efforts.
+Database maintenance ensures optimal performance.
+Cache invalidation keeps data fresh.
+Error handling prevents system crashes.
+Security patches address known vulnerabilities.
+Backup verification ensures data recovery.
+Load balancing distributes traffic effectively.
+Monitoring dashboards visualize system health.
+API documentation aids integration efforts.
+Database optimization improves performance.
+Cache warming prevents cold starts.
+Security auditing identifies risks.
+Logging helps debug issues.
+This text was generated with Claude 3.5 Sonnet :-P
