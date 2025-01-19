@@ -7,7 +7,14 @@ A simple command-line application for semantic search using vector embeddings. T
 - Docker and Docker Compose
 - .NET 8.0 SDK
 - NVIDIA GPU (recommended) with appropriate CUDA drivers
+- Local ollama installation (models are used from `/usr/share/ollama/.ollama/models`)
 
+### Required Ollama Models
+The following models must be installed locally to be mapped into the Docker container:
+```bash
+ollama pull snowflake-arctic-embed2  # Multilingual embedding model with a dimension of 1024
+ollama pull mistral                  # Efficient generative AI model that fits on consumer grade hardware
+```
 ## Getting Started
 
 1. Start the required services using Docker Compose:
