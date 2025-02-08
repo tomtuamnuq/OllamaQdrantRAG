@@ -32,7 +32,12 @@ public static class ServiceExtensions
         // Services
         services.AddSingleton<IEmbeddingService, OllamaEmbeddingService>();
         services.AddSingleton<IVectorRepository, QdrantVectorRepository>();
-        services.AddSingleton<IFileReader, TxtFileReader>();
+        services.AddSingleton<IFileReader>(provider => new FileReaderFactory(
+            new Dictionary<string, IFileReader>
+            {
+                { ".txt", new TxtFileReader() },
+                { ".pdf", new PdfFileReader() }
+            }));
         services.AddSingleton<IPromptService, OllamaPromptService>();
         // Main application
         services.AddSingleton<App>();
