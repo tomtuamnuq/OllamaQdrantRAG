@@ -8,6 +8,7 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="itext" Version="9.0.0" />
         <PackageReference Include="itext7" Version="9.0.0" />
         <PackageReference Include="LangChain" Version="0.16.0" />
         <PackageReference Include="LangChain.Splitters.CSharp" Version="0.16.0" />

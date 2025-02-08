@@ -63,8 +63,6 @@ public class OllamaPromptService(
             {
                 throw new InvalidOperationException("Received empty response from Ollama service.");
             }
-
-            logger.LogInformation("AI Response:\n{Answer}", aiAnswer);
             return aiAnswer;
         }
         catch (HttpRequestException ex)

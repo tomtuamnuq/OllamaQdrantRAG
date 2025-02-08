@@ -1,8 +1,5 @@
 using iText.Kernel.Pdf;
 using iText.Kernel.Pdf.Canvas.Parser;
-using iText.Kernel.Pdf.Canvas.Parser.Listener;
-using LangChain.DocumentLoaders;
-using LangChain.Extensions;
 using LangChain.Splitters.Text;
 namespace VectorSearch.Services.FileReader;
 
@@ -23,26 +20,27 @@ public class PdfFileReader : IFileReader
             throw new FileNotFoundException($"File {filePath} does not exist");
 
         var fullText = ExtractTextFromPdf(filePath);
+        Console.WriteLine(fullText.Length);
         var chunks = _splitter.SplitText(fullText);
         foreach (var chunk in chunks)
         {
-            Console.WriteLine($"Chunk: {chunk} \n ####");
+            Console.WriteLine($"Chunk: {chunk.Substring(0, Math.Min(10, chunk.Length))} \n ####");
             if (string.IsNullOrWhiteSpace(chunk)) continue;
             yield return chunk;
         }
     }
     private static string ExtractTextFromPdf(string filePath)
     {
-        using var pdfDoc = new PdfDocument(new PdfReader(filePath, new ReaderProperties()));
-        var strategy = new LocationTextExtractionStrategy();
+        using var pdfDoc = new PdfDocument(new PdfReader(filePath));
         var text = new System.Text.StringBuilder();
 
         for (var i = 1; i <= pdfDoc.GetNumberOfPages(); i++)
         {
             var page = pdfDoc.GetPage(i);
-            text.AppendLine(PdfTextExtractor.GetTextFromPage(page, strategy));
+            var pageText = PdfTextExtractor.GetTextFromPage(page);
+            Console.WriteLine($"{i.ToString()}\n{pageText.Substring(0, Math.Min(10, pageText.Length))} ### \n");
+            text.AppendLine(pageText);
         }
-
         return text.ToString();
     }
 }
